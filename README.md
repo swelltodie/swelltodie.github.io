@@ -1,7 +1,3 @@
----
-title: ZhangPeiJie's Homework Webpage
----
-
 # Homework Week 1
 
  2022.9.23
