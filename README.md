@@ -1,8 +1,7 @@
-## Homework Week 1
 
-张沛杰 2022311***
+# Homework Week 1
 
-2022.9.23
+ 2022.9.23
 
 
 
