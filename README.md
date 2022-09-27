@@ -44,18 +44,17 @@ zcat 1.gtf.gz | awk '$1 == "XI" && $3 == "CDS"' | sort -n -k 5 | tail -10
 结果如下：
 
 ```bash
-stop_codon      6692
-start_codon     6700
-CDS     7050
-gene    7126
-transcript      7126
-exon    7553
+start_codon      853
+stop_codon       853
+gene             886
+transcript       886
+CDS              895
+exon             933
 ```
 
 使用的代码如下：
 
 ```bash
-# 先去除了前5行注释信息，从第6行开始分类统计数目
-zcat 1.gtf.gz | tail -n +6 | awk '{x[$3]++} END{for(i in x) print(i "\t" x[i])}' | sort -n -k 2
+zcat 1.gtf.gz | awk '$1 == "IV" {x[$3]++} END {for(i in x) printf("%-11s\t %s\n", i, x[i])}' | sort -n -k 2
 ```
 
